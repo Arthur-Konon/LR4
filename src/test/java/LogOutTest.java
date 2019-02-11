@@ -6,15 +6,15 @@ import static org.testng.Assert.assertEquals;
 
 public class LogOutTest {
 
+
+
     @Test
-    public void simpleTest(WebDriver driver) {
+    public void simpleTest( WebDriver driver) {
         //WebDriver driver = null;
 
 
         String expectedTitle = "System Dashboard - Hillel IT School JIRA";
         String actualTitle = "";
-
-
 
        // driver.findElement(By.xpath("//*[@id=\"log_out\"]")).click();
 
@@ -22,9 +22,9 @@ public class LogOutTest {
 
         actualTitle = driver.getTitle();
 
-
         // выполняем проверку
         assertEquals(actualTitle, expectedTitle);
+        System.out.println("Actual title is: " + actualTitle);
 
     }
 }

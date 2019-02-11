@@ -22,7 +22,7 @@ public class LogInTest {
 
 
         driver.findElement(By.xpath("//*[@id=\"login-form-username\"]")).sendKeys("arth.konon");
-        driver.findElement(By.xpath("//*[@id=\"login-form-password\"]")).sendKeys("talking");
+                    driver.findElement(By.xpath("//*[@id=\"login-form-password\"]")).sendKeys("1234");
         driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
 
         actualTitle = driver.getTitle();
